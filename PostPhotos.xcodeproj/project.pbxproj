@@ -42,7 +42,7 @@
 		75496D1F26CB26660093505B /* PhotoService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoService.swift; sourceTree = "<group>"; };
 		75496D2326CC1C290093505B /* PhotoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCell.swift; sourceTree = "<group>"; };
 		75496D2826CC58540093505B /* ImageCacheService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCacheService.swift; sourceTree = "<group>"; };
-		7555E23026C5BAD700FE4515 /* Photos posting app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Photos posting app.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7555E23026C5BAD700FE4515 /* PostPhotos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PostPhotos.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7555E23326C5BAD700FE4515 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7555E23526C5BAD700FE4515 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		7555E23A26C5BAD700FE4515 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -82,7 +82,7 @@
 		7555E22726C5BAD700FE4515 = {
 			isa = PBXGroup;
 			children = (
-				7555E23226C5BAD700FE4515 /* Photos posting app */,
+				7555E23226C5BAD700FE4515 /* PostPhotos */,
 				7555E23126C5BAD700FE4515 /* Products */,
 				27E864A1D0185257A0FE51D3 /* Pods */,
 				C724696DC9F90CCC69477891 /* Frameworks */,
@@ -92,12 +92,12 @@
 		7555E23126C5BAD700FE4515 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				7555E23026C5BAD700FE4515 /* Photos posting app.app */,
+				7555E23026C5BAD700FE4515 /* PostPhotos.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		7555E23226C5BAD700FE4515 /* Photos posting app */ = {
+		7555E23226C5BAD700FE4515 /* PostPhotos */ = {
 			isa = PBXGroup;
 			children = (
 				7555E23326C5BAD700FE4515 /* AppDelegate.swift */,
@@ -112,7 +112,7 @@
 				7555E24126C5BADF00FE4515 /* Info.plist */,
 				7555E24726C5BBA600FE4515 /* GoogleService-Info.plist */,
 			);
-			path = "Photos posting app";
+			path = PostPhotos;
 			sourceTree = "<group>";
 		};
 		7555E24926C5C1B300FE4515 /* StoryBoards */ = {
@@ -184,9 +184,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		7555E22F26C5BAD700FE4515 /* Photos posting app */ = {
+		7555E22F26C5BAD700FE4515 /* PostPhotos */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 7555E24426C5BADF00FE4515 /* Build configuration list for PBXNativeTarget "Photos posting app" */;
+			buildConfigurationList = 7555E24426C5BADF00FE4515 /* Build configuration list for PBXNativeTarget "PostPhotos" */;
 			buildPhases = (
 				A11954E0B69CF3AFE402583F /* [CP] Check Pods Manifest.lock */,
 				7555E22C26C5BAD700FE4515 /* Sources */,
@@ -199,9 +199,9 @@
 			);
 			dependencies = (
 			);
-			name = "Photos posting app";
+			name = PostPhotos;
 			productName = "CWC FireBase photos";
-			productReference = 7555E23026C5BAD700FE4515 /* Photos posting app.app */;
+			productReference = 7555E23026C5BAD700FE4515 /* PostPhotos.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -219,7 +219,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 7555E22B26C5BAD700FE4515 /* Build configuration list for PBXProject "Photos posting app" */;
+			buildConfigurationList = 7555E22B26C5BAD700FE4515 /* Build configuration list for PBXProject "PostPhotos" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -232,7 +232,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				7555E22F26C5BAD700FE4515 /* Photos posting app */,
+				7555E22F26C5BAD700FE4515 /* PostPhotos */,
 			);
 		};
 /* End PBXProject section */
@@ -407,6 +407,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				"INFOPLIST_FILE[sdk=*]" = "";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -481,7 +482,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = RRZGSUA2TG;
-				INFOPLIST_FILE = "CWC FireBase photos/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/PostPhotos/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -503,7 +504,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = RRZGSUA2TG;
-				INFOPLIST_FILE = "CWC FireBase photos/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/PostPhotos/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -518,7 +519,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		7555E22B26C5BAD700FE4515 /* Build configuration list for PBXProject "Photos posting app" */ = {
+		7555E22B26C5BAD700FE4515 /* Build configuration list for PBXProject "PostPhotos" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				7555E24226C5BADF00FE4515 /* Debug */,
@@ -527,7 +528,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		7555E24426C5BADF00FE4515 /* Build configuration list for PBXNativeTarget "Photos posting app" */ = {
+		7555E24426C5BADF00FE4515 /* Build configuration list for PBXNativeTarget "PostPhotos" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				7555E24526C5BADF00FE4515 /* Debug */,
